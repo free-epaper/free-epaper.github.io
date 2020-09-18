@@ -104,6 +104,19 @@ class AppComponent {
         this.zoomLevels = ['auto', 'page-actual', 'page-fit', 'page-width',
             0.2, 0.25, 0.33, 0.5, 0.67, 0.75, 0.82, 0.9, 1, 1.1, 1.15,
             1.25, 1.5, 1.66, 1.8, 2, 2.5, 3, 3.5, 4];
+        this.holidays = [
+            { date: 17, month: 9 },
+            { date: 15, month: 8 },
+            { date: 26, month: 1 },
+            { date: 2, month: 10 } // 02 Oct
+        ];
+        this.DateFilterFn = (date) => {
+            for (var i = 0; i < this.holidays.length; i++) {
+                if (date.getMonth() == this.holidays[i].month - 1 && date.getDate() == this.holidays[i].date + 1)
+                    return false;
+            }
+            return true;
+        };
         this.newspaperForm = this.fb.group({
             edition: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
             date: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
@@ -135,7 +148,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 52, vars: 9, consts: [[1, "intro-section"], ["fxLayout", "row", "fxLayout.xs", "column", "fxFlexFill", "", "fxLayoutAlign", "center center"], [1, "example-container"], [2, "text-align", "center"], [3, "formGroup"], ["appearance", "fill"], ["matInput", "", "formControlName", "date", "placeholder", "MM/DD/YYYY", 3, "matDatepicker", "min", "max", "focus"], ["matSuffix", "", 3, "for"], ["picker", ""], [4, "ngIf"], ["formControlName", "edition"], ["value", "KOS-BHG"], ["value", "NG1R-DEL"], ["value", "NGR-PAT"], ["value", "NGR-RAN"], ["value", "PRN-BHG"], ["value", "KTR-BHG"], ["value", "DRB-MUZ"], ["value", "MDB-MUZ"], ["value", "MRT-MRT"], ["value", "MZN-MRT"], ["mat-raised-button", "", "color", "basic", 3, "disabled", "click"], ["mat-raised-button", "", "color", "primary", 3, "disabled", "click"], ["style", "padding-left: 2%; padding-right: 2%", 4, "ngIf"], [2, "padding-left", "2%", "padding-right", "2%"], ["useBrowserLocale", "true", "height", "100vh", 3, "src", "mobileFriendlyZoom", "enablePinchOnMobile"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 52, vars: 10, consts: [[1, "intro-section"], ["fxLayout", "row", "fxLayout.xs", "column", "fxFlexFill", "", "fxLayoutAlign", "center center"], [1, "example-container"], [2, "text-align", "center"], [3, "formGroup"], ["appearance", "fill"], ["matInput", "", "formControlName", "date", "placeholder", "MM/DD/YYYY", 3, "matDatepicker", "min", "max", "matDatepickerFilter", "focus"], ["matSuffix", "", 3, "for"], ["picker", ""], [4, "ngIf"], ["formControlName", "edition"], ["value", "KOS-BHG"], ["value", "NG1R-DEL"], ["value", "NGR-PAT"], ["value", "NGR-RAN"], ["value", "PRN-BHG"], ["value", "KTR-BHG"], ["value", "DRB-MUZ"], ["value", "MDB-MUZ"], ["value", "MRT-MRT"], ["value", "MZN-MRT"], ["mat-raised-button", "", "color", "basic", 3, "disabled", "click"], ["mat-raised-button", "", "color", "primary", 3, "disabled", "click"], ["style", "padding-left: 2%; padding-right: 2%", 4, "ngIf"], [2, "padding-left", "2%", "padding-right", "2%"], ["useBrowserLocale", "true", "height", "100vh", 3, "src", "mobileFriendlyZoom", "enablePinchOnMobile"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -223,7 +236,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.newspaperForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matDatepicker", _r0)("min", ctx.minDate)("max", ctx.maxDate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matDatepicker", _r0)("min", ctx.minDate)("max", ctx.maxDate)("matDatepickerFilter", ctx.DateFilterFn);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("for", _r0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
@@ -532,7 +545,7 @@ AppMaterialModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                     _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_27__["MatSnackBarModule"],
                     _angular_material_table__WEBPACK_IMPORTED_MODULE_28__["MatTableModule"],
                     _angular_material_sort__WEBPACK_IMPORTED_MODULE_29__["MatSortModule"],
-                    _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__["MatPaginatorModule"]
+                    _angular_material_paginator__WEBPACK_IMPORTED_MODULE_30__["MatPaginatorModule"],
                 ]
             }]
     }], null, null); })();
