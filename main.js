@@ -108,7 +108,8 @@ class AppComponent {
             { date: 17, month: 9 },
             { date: 15, month: 8 },
             { date: 26, month: 1 },
-            { date: 2, month: 10 } // 02 Oct
+            { date: 2, month: 10 },
+            { date: 1, month: 5 } // labour day
         ];
         this.DateFilterFn = (date) => {
             for (var i = 0; i < this.holidays.length; i++) {
