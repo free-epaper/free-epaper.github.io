@@ -393,6 +393,9 @@ class AppComponent {
                             link.remove();
                         }, 100);
                         this.isLoading = false;
+                        this._snackBar.open("DOWNLOADING...", "OK", {
+                            duration: 2000,
+                        });
                     }
                 });
                 reader.readAsText(x);
@@ -451,6 +454,9 @@ class AppComponent {
                     window.URL.revokeObjectURL(data);
                     link.remove();
                 }, 100);
+                this._snackBar.open("DOWNLOADING...", "OK", {
+                    duration: 2000,
+                });
                 this.isLoading = false;
             });
             reader.readAsText(x);
