@@ -100,17 +100,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.service */ "F5nt");
 /* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/core */ "FKr1");
-/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/flex-layout/flex */ "XiUz");
-/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/tabs */ "wZkO");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
-/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/form-field */ "kmnG");
-/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/input */ "qFsG");
-/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/datepicker */ "iadO");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/select */ "d3UM");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
-/* harmony import */ var ngx_extended_pdf_viewer__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-extended-pdf-viewer */ "E1wN");
-/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/progress-spinner */ "Xa2L");
+/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/snack-bar */ "dNgK");
+/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/flex-layout/flex */ "XiUz");
+/* harmony import */ var _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/tabs */ "wZkO");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/card */ "Wp6s");
+/* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/form-field */ "kmnG");
+/* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/input */ "qFsG");
+/* harmony import */ var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/datepicker */ "iadO");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/select */ "d3UM");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
+/* harmony import */ var ngx_extended_pdf_viewer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-extended-pdf-viewer */ "E1wN");
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/progress-spinner */ "Xa2L");
+
 
 
 
@@ -140,8 +142,8 @@ function AppComponent_mat_error_69_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 function AppComponent_div_96_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ngx-extended-pdf-viewer", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ngx-extended-pdf-viewer", 37);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -149,30 +151,32 @@ function AppComponent_div_96_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx_r4.url)("mobileFriendlyZoom", ctx_r4.zoom)("enablePinchOnMobile", ctx_r4.enablePinchOnMobile);
 } }
 function AppComponent_div_98_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "\u00A0Loading...");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "mat-spinner");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 class AppComponent {
-    constructor(fb, router, appservie, dateAdapter) {
+    constructor(fb, router, appservie, dateAdapter, _snackBar) {
         this.fb = fb;
         this.router = router;
         this.appservie = appservie;
         this.dateAdapter = dateAdapter;
+        this._snackBar = _snackBar;
         this.zoom = '140%';
         this.title = 'newspaper';
         this.readingMode = false;
         this.newspaperForm = undefined;
         this.isLoading = false;
+        this.errorMessage = "NEWSPAPER NOT FOUND/PUBLISHED";
         this.enablePinchOnMobile = true;
         this.zoomLevels = ['auto', 'page-actual', 'page-fit', 'page-width',
             0.2, 0.25, 0.33, 0.5, 0.67, 0.75, 0.82, 0.9, 1, 1.1, 1.15,
             1.25, 1.5, 1.66, 1.8, 2, 2.5, 3, 3.5, 4];
         this.holidays = [
-            { date: 17, month: 9 },
+            // { date: 17, month: 9 }, // 17th sept: Vishwakarma Puja
             { date: 15, month: 8 },
             { date: 26, month: 1 },
             { date: 2, month: 10 },
@@ -205,7 +209,6 @@ class AppComponent {
         this.minDate.setDate(this.minDate.getDate() - 59);
         this.dateAdapter.setLocale('hi');
     }
-    ;
     tabClick(event) {
         this.newspaperForm.reset();
         const tab = event.tab.textLabel;
@@ -244,6 +247,14 @@ class AppComponent {
                 // }
                 // For other browsers: 
                 // Create a link pointing to the ObjectURL containing the blob.
+                if (newBlob.size == 0) {
+                    this._snackBar.open(this.errorMessage, "OK", {
+                        duration: 4000,
+                    });
+                    this.readingMode = false;
+                    this.isLoading = false;
+                    return;
+                }
                 const data = window.URL.createObjectURL(newBlob);
                 var link = document.createElement('a');
                 link.href = data;
@@ -254,6 +265,14 @@ class AppComponent {
             reader.readAsText(x);
             // It is necessary to create a new blob object with mime-type explicitly set
             // otherwise only Chrome works like it should
+        }, error => {
+            // console.log(error);
+            this.isLoading = false;
+            this.readingMode = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
+            return;
         });
     }
     readHT() {
@@ -261,6 +280,10 @@ class AppComponent {
         this.isLoading = true;
         if (this.readTries > 100) {
             this.readTries = 0;
+            this.isLoading = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
             return;
         }
         this.readTries += 1;
@@ -306,6 +329,14 @@ class AppComponent {
                 // It is necessary to create a new blob object with mime-type explicitly set
                 // otherwise only Chrome works like it should
             });
+        }, error => {
+            // console.log(error);
+            this.isLoading = false;
+            this.readingMode = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
+            return;
         });
     }
     downloadHT() {
@@ -313,6 +344,10 @@ class AppComponent {
         this.isLoading = true;
         if (this.downloadTries > 100) {
             this.downloadTries = 0;
+            this.isLoading = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
             return;
         }
         this.downloadTries += 1;
@@ -364,16 +399,73 @@ class AppComponent {
                 // It is necessary to create a new blob object with mime-type explicitly set
                 // otherwise only Chrome works like it should
             });
+        }, error => {
+            // console.log(error);
+            this.isLoading = false;
+            this.readingMode = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
+            return;
         });
     }
+    // download() {
+    //   this.readingMode = false;
+    //   var url = this.getUrl();
+    //   window.location.href = url;
+    // }
     download() {
+        var name = "Hindustan" + this.newspaperForm.value.edition + "-" + this.newspaperForm.value.date.getDate() + "-" + (this.newspaperForm.value.date.getMonth() + 1);
+        this.isLoading = true;
         this.readingMode = false;
-        var url = this.getUrl();
-        window.location.href = url;
+        this.appservie.getPDF(this.getUrl())
+            .subscribe(x => {
+            const reader = new FileReader();
+            reader.addEventListener('loadend', (e) => {
+                // window.location.href = url;
+                this.downloadTries = 0;
+                var newBlob = new Blob([x], { type: "application/pdf" });
+                if (newBlob.size == 0) {
+                    this.isLoading = false;
+                    this._snackBar.open(this.errorMessage, "OK", {
+                        duration: 4000,
+                    });
+                    return;
+                }
+                // IE doesn't allow using a blob object directly as link href
+                // instead it is necessary to use msSaveOrOpenBlob
+                if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                    window.navigator.msSaveOrOpenBlob(newBlob);
+                    return;
+                }
+                // For other browsers: 
+                // Create a link pointing to the ObjectURL containing the blob.
+                const data = window.URL.createObjectURL(newBlob);
+                var link = document.createElement('a');
+                link.href = data;
+                link.download = name + ".pdf";
+                // this is necessary as link.click() does not work on the latest firefox
+                link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+                setTimeout(function () {
+                    // For Firefox it is necessary to delay revoking the ObjectURL
+                    window.URL.revokeObjectURL(data);
+                    link.remove();
+                }, 100);
+                this.isLoading = false;
+            });
+            reader.readAsText(x);
+        }, error => {
+            // console.log(error);
+            this.isLoading = false;
+            this._snackBar.open(this.errorMessage, "OK", {
+                duration: 4000,
+            });
+            return;
+        });
     }
 }
-AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_3__["AppService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"])); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([])], decls: 99, vars: 20, consts: [[1, "intro-section"], ["fxLayout", "row", "fxLayout.xs", "column", "fxFlexFill", "", "fxLayoutAlign", "center center"], [1, "example-container"], [3, "selectedTabChange"], ["label", "\u0939\u093F\u0928\u094D\u0926\u0941\u0938\u094D\u0924\u093E\u0928"], [2, "text-align", "center"], [3, "formGroup"], ["appearance", "fill"], ["matInput", "", "formControlName", "date", "placeholder", "MM/DD/YYYY", 3, "matDatepicker", "min", "max", "matDatepickerFilter", "focus"], ["matSuffix", "", 3, "for"], ["picker", ""], [4, "ngIf"], ["formControlName", "edition"], ["value", "KOS-BHG"], ["value", "NG1R-DEL"], ["value", "NGR-PAT"], ["value", "NGR-RAN"], ["value", "PRN-BHG"], ["value", "KTR-BHG"], ["value", "DRB-MUZ"], ["value", "MDB-MUZ"], ["value", "MRT-MRT"], ["value", "MZN-MRT"], ["mat-raised-button", "", "color", "basic", 3, "disabled", "click"], ["mat-raised-button", "", "color", "primary", 3, "disabled", "click"], ["label", "Hindustan Times"], ["picker2", ""], ["value", "51"], ["value", "58"], ["value", "1"], ["value", "54"], ["value", "46"], ["value", "64"], ["value", "65"], ["style", "padding-left: 2%; padding-right: 2%", 4, "ngIf"], ["fxLayout", "row", "fxFlexFill", "", "fxLayoutAlign", "center"], ["class", "example-container", 4, "ngIf"], [2, "padding-left", "2%", "padding-right", "2%"], ["useBrowserLocale", "true", "height", "100vh", 3, "src", "mobileFriendlyZoom", "enablePinchOnMobile"], [2, "font-size", "24"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_3__["AppService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_5__["MatSnackBar"])); };
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([])], decls: 99, vars: 20, consts: [[1, "intro-section"], ["fxLayout", "row", "fxLayout.xs", "column", "fxFlexFill", "", "fxLayoutAlign", "center center"], [1, "example-container"], [3, "selectedTabChange"], ["label", "\u0939\u093F\u0928\u094D\u0926\u0941\u0938\u094D\u0924\u093E\u0928"], [2, "text-align", "center"], [3, "formGroup"], ["appearance", "fill"], ["matInput", "", "formControlName", "date", "placeholder", "MM/DD/YYYY", 3, "matDatepicker", "min", "max", "matDatepickerFilter", "focus"], ["matSuffix", "", 3, "for"], ["picker", ""], [4, "ngIf"], ["formControlName", "edition"], ["value", "KOS-BHG"], ["value", "NG1R-DEL"], ["value", "NGR-PAT"], ["value", "NGR-RAN"], ["value", "PRN-BHG"], ["value", "KTR-BHG"], ["value", "DRB-MUZ"], ["value", "MDB-MUZ"], ["value", "MRT-MRT"], ["value", "MZN-MRT"], ["mat-raised-button", "", "color", "basic", 3, "disabled", "click"], ["mat-raised-button", "", "color", "primary", 3, "disabled", "click"], ["label", "Hindustan Times"], ["picker2", ""], ["value", "51"], ["value", "58"], ["value", "1"], ["value", "54"], ["value", "46"], ["value", "64"], ["value", "65"], ["style", "padding-left: 2%; padding-right: 2%", 4, "ngIf"], ["fxLayout", "row", "fxLayoutAlign", "center"], [2, "padding-left", "2%", "padding-right", "2%"], ["useBrowserLocale", "true", "height", "100vh", 3, "src", "mobileFriendlyZoom", "enablePinchOnMobile"], [2, "font-size", "24"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -528,7 +620,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](96, AppComponent_div_96_Template, 2, 3, "div", 34);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "div", 35);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](98, AppComponent_div_98_Template, 4, 0, "div", 36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](98, AppComponent_div_98_Template, 4, 0, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -562,7 +654,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.readingMode);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isLoading);
-    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["FlexFillDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_5__["DefaultLayoutAlignDirective"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_6__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_6__["MatTab"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardContent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_9__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_10__["MatDatepickerInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_10__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_10__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["NgIf"], _angular_material_select__WEBPACK_IMPORTED_MODULE_12__["MatSelect"], _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["MatOption"], _angular_material_button__WEBPACK_IMPORTED_MODULE_13__["MatButton"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__["MatError"], ngx_extended_pdf_viewer__WEBPACK_IMPORTED_MODULE_14__["NgxExtendedPdfViewerComponent"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_15__["MatSpinner"]], styles: [".intro-section[_ngcontent-%COMP%] {\n  height: 500px;\n}\n\nmat-datepicker-toggle[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtBQUNKOztBQUVBO0VBQ0kscUJBQUE7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbnRyby1zZWN0aW9uIHtcbiAgICBoZWlnaHQ6IDUwMHB4O1xufVxuXG5tYXQtZGF0ZXBpY2tlci10b2dnbGUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn0iXX0= */"] });
+    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["FlexFillDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_6__["DefaultLayoutAlignDirective"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTabGroup"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_7__["MatTab"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardHeader"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardSubtitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardContent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_10__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_11__["MatDatepickerInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_11__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_11__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_12__["NgIf"], _angular_material_select__WEBPACK_IMPORTED_MODULE_13__["MatSelect"], _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["MatOption"], _angular_material_button__WEBPACK_IMPORTED_MODULE_14__["MatButton"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_9__["MatError"], ngx_extended_pdf_viewer__WEBPACK_IMPORTED_MODULE_15__["NgxExtendedPdfViewerComponent"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__["MatSpinner"]], styles: [".intro-section[_ngcontent-%COMP%] {\n  height: 500px;\n}\n\nmat-datepicker-toggle[_ngcontent-%COMP%] {\n  display: inline-block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBQTtBQUNKOztBQUVBO0VBQ0kscUJBQUE7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5pbnRyby1zZWN0aW9uIHtcbiAgICBoZWlnaHQ6IDUwMHB4O1xufVxuXG5tYXQtZGF0ZXBpY2tlci10b2dnbGUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -571,7 +663,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
                 styleUrls: ['./app.component.scss'],
                 providers: []
             }]
-    }], function () { return [{ type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }, { type: _app_service__WEBPACK_IMPORTED_MODULE_3__["AppService"] }, { type: _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"] }]; }, null); })();
+    }], function () { return [{ type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }, { type: _app_service__WEBPACK_IMPORTED_MODULE_3__["AppService"] }, { type: _angular_material_core__WEBPACK_IMPORTED_MODULE_4__["DateAdapter"] }, { type: _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_5__["MatSnackBar"] }]; }, null); })();
 
 
 /***/ }),
